@@ -1,0 +1,16 @@
+/*
+    FILE    style.css
+    DATE    2022-09-01
+    AUTHOR  RYAN PARADEE
+    DESCRIPTION
+        basic style sheet
+
+*/
+
+
+
+body{
+width: 90%;
+margin: 0 auto;
+background-color: rgb(205, 245, 255);
+}

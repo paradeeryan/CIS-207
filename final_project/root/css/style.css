@@ -1,0 +1,255 @@
+/*
+    FILE    style.css
+    DATE    2022-12-06
+    AUTHOR  Ryan Paradee
+        DESCRIPTION
+            Standard Styling Sheet
+            with precedents for all 
+            pages and some homepage
+            specific styles using
+            id's
+*/
+/*media query*/
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url(../images/junglebackground.png);
+} 
+p{
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  header h1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    background-color: rgb(174, 134, 82);
+    border: 2px solid rgb(109, 37, 37);
+    border-radius: 0.4em;
+  }
+  header h1 a:hover {
+    background-color: palegoldenrod;
+  }
+
+  /*start of nav*/
+
+  nav ul {
+    list-style-type: none;
+    position: relative;
+  }
+
+  nav ul li {
+    float: left;
+    padding: 0.25em;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 4em;
+    padding: 0.25em 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(174, 134, 82);
+    color: black;
+    border: 2px solid rgb(109, 37, 37);
+    border-radius: 0.4em;
+  }
+  nav ul li a:hover {
+    background-color: palegoldenrod;
+  }
+
+  main section {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: rgb(174, 134, 82);
+    border: 0.1em solid rgb(109, 37, 37);
+    border-radius: 1em;
+    border-width: 0.5em;
+  }
+  /*start of hompage section 1 styling (intro section)*/
+  main #home_s1 {
+    float: left;
+    text-align: center;
+  }
+  main #home_s1 h2 {
+    font-weight: bolder;
+  }
+  main #home_s1 p {
+    font-weight: bold;
+  }
+  /*end of section 1 styling*/
+
+  /*start of hompage section 2 styling (images section)*/
+  main #home_s2 h2 {
+    font-weight: bolder;
+  }
+  main #home_s2 img {
+    max-width: 250px;
+    max-height: 250px;
+    border: 0.1em solid rgb(109, 37, 37);
+    border-radius: 1em;
+    border-width: 0.25em;
+  }
+  main #home_s2 p {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  /*end of section 2 styling*/
+
+  footer {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.25em;
+    border-radius: 1em;
+    border: 0.1em solid rgb(109, 37, 37);
+    border-width: 0.5em;
+    background-color: rgb(174, 134, 82);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  footer section p {
+    margin: 0;
+  }
+  footer #foot_home p a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+  }
+  footer #foot_address p a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+  }
+  footer #foot_contact p {
+    padding: 0.2em;
+  }
+  footer #foot_contact p a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+  }
+}
+/*DESKTOP STYLING*/
+@media screen and (min-width: 600px) {
+  header h1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    background-color: rgb(174, 134, 82);
+    border: 2px solid rgb(109, 37, 37);
+    border-radius: 0.4em;
+  }
+  header h1 a:hover {
+    background-color: palegoldenrod;
+  }
+
+  /*start of nav*/
+  nav {
+    padding-bottom: 3.5em;
+  }
+  nav ul {
+    list-style-type: none;
+    position: relative;
+  }
+
+  nav ul li {
+    float: left;
+    padding: 0.25em;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 7em;
+    padding: 0.75em 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(174, 134, 82);
+    color: black;
+    border: 2px solid rgb(109, 37, 37);
+    border-radius: 0.4em;
+  }
+  nav ul li a:hover {
+    background-color: palegoldenrod;
+  }
+  /*end of nav*/
+
+  /*defualt styling for sections*/
+  main section {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: rgb(174, 134, 82);
+    border: 0.1em solid rgb(109, 37, 37);
+    border-radius: 1em;
+    border-width: 0.5em;
+  }
+  /*start of hompage section 1 styling (intro section)*/
+  main #home_s1 {
+    float: left;
+    text-align: center;
+  }
+  main #home_s1 h2 {
+    font-weight: bolder;
+  }
+  main #home_s1 p {
+    font-weight: bold;
+  }
+  /*end of section 1 styling*/
+
+  /*start of hompage section 2 styling (images section)*/
+  main #home_s2 h2 {
+    font-weight: bolder;
+  }
+  main #home_s2 img {
+    max-width: 300px;
+    max-height: 300px;
+    border: 0.1em solid rgb(109, 37, 37);
+    border-radius: 1em;
+    border-width: 0.25em;
+  }
+  main #home_s2 p {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+  }
+  /*end of section 2 styling*/
+
+  footer {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.25em;
+    border-radius: 1em;
+    border: 0.1em solid rgb(109, 37, 37);
+    border-width: 0.5em;
+    background-color: rgb(174, 134, 82);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  footer section p {
+    margin: 0;
+  }
+  footer #foot_home p a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+  }
+  footer #foot_address p a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+  }
+  footer #foot_contact p {
+    padding: 0.2em;
+  }
+  footer #foot_contact p a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+  }
+}

@@ -1,0 +1,108 @@
+/*
+    FILE    style.css
+    DATE    2022-10-18
+    AUTHOR  Bob Trapp
+    DESCRIPTION
+        The primary styling for the Week 09 Assignment.
+*/
+
+body {
+    background-color: cadetblue;
+}
+
+/*
+    HEADER STYLE
+*/
+header {
+    padding: 0.5em;
+}
+
+/*
+    NAV STYLE
+*/
+#mobile_nav {
+    display: block;
+}
+
+#main_nav {
+    display: none;
+}
+
+.slicknav_menu {
+    background-color: darkcyan !important;
+    color: antiquewhite;
+    padding: 0.25em;
+}
+
+.slicknav_menu a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+
+/*
+    MAIN STYLE
+*/
+main section {
+    padding: 0.25em;
+    border: 1px solid darkblue;
+    background-color: aliceblue;
+}
+
+main section:nth-child(even) {
+    background-color: lightgreen;
+}
+
+/*
+    FOOTER STYLE
+*/
+footer {
+    padding: 0.25em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* *****************************************************************************
+    DESKTOP STYLE RULES
+***************************************************************************** */
+@media screen and (min-width: 600px) {
+
+    body {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    /*
+        NAV STYLE
+    */
+    #mobile_nav {
+        display: none;
+    }
+
+    #main_nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        width: 6em;
+        padding: 0.25em 0;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: darkgray;
+        color: lemonchiffon;
+        border: 1px solid blue;
+        border-radius: 0.25em;
+    }
+
+
+}

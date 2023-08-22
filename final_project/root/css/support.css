@@ -1,0 +1,86 @@
+/*
+    FILE    style.css
+    DATE    2022-12-06
+    AUTHOR  Ryan Paradee
+        DESCRIPTION
+            Support Page Styling
+*/
+@media screen and (max-width: 600px) {
+  main {
+    clear: both;
+    /*extra grid stuff*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(20em, auto);
+    gap: 1em;
+    /*end of extra grid stuff*/
+  }
+  img {
+    max-width: 200px;
+    max-height: 3000px;
+    border: 0.1em solid rgb(109, 37, 37);
+    border-radius: 1em;
+    border-width: 0.25em;
+  }
+  main section {
+    float: left;
+  }
+  form div label #cvc_link {
+    text-decoration: underline;
+    color: black;
+  }
+  label,
+  input[type="text"],
+  input[type="password"] {
+    display: inline-block;
+  }
+  textarea {
+    width: 50%;
+    height: 5em;
+  }
+  .formrow label {
+    width: 10em;
+    vertical-align: top;
+    font-weight: bold;
+  }
+
+  form #submitdiv {
+    padding: 0.5em;
+  }
+}
+@media screen and (min-width: 600px) {
+  main {
+    clear: both;
+    /*extra grid stuff*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(20em, auto);
+    gap: 1em;
+    /*end of extra grid stuff*/
+  }
+  main section {
+    float: left;
+  }
+  form div label #cvc_link {
+    text-decoration: underline;
+    color: black;
+  }
+  label,
+  input[type="text"],
+  input[type="password"] {
+    display: inline-block;
+  }
+  textarea {
+    width: 50%;
+    height: 5em;
+  }
+  .formrow label {
+    width: 10em;
+    vertical-align: top;
+    font-weight: bold;
+  }
+
+  form #submitdiv {
+    padding: 0.5em;
+  }
+}

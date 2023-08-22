@@ -1,0 +1,30 @@
+/*
+    FILE    style.css
+    DATE    2022-09-08
+    AUTHOR  RYAN PARADEE
+    DESCRIPTION
+        basic style sheet for member pages
+*/
+/*
+section p{
+    color: red;
+}
+
+
+section p:first-of-type{
+    color: red;
+}
+*/
+
+section p:first-of-type::first-letter{
+font-weight: bold;
+font-size: large;
+background-color: red;
+color: yellow;
+border: 1px solid yellow;
+    
+}
+img{
+    float: right;
+    margin-bottom: 2em;
+}

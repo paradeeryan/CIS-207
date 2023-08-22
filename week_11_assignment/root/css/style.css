@@ -1,0 +1,29 @@
+/*
+    FILE    style.css
+    DATE    2022-XX-XX
+    AUTHOR  Ryan Paradee
+        DESCRIPTION
+            Standard Styling Sheet
+*/
+
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: wheat;
+  }
+
+  label,
+  input[type="text"],
+  input[type="password"] {
+    display: inline-block;
+  }
+  textarea {
+    width: 50%;
+    height: 5em;
+  }
+  .formrow label{
+    width: 10em;
+    vertical-align: top;
+    font-weight: bold;
+  }

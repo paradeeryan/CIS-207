@@ -1,0 +1,58 @@
+/*
+    FILE    page05.css
+    DATE    2022-10-27
+    AUTHOR  Ryan Paradee
+    DESCRIPTION
+        The grid styling for Page 05 of the Week 09 Assignment.
+
+        Use a media query and grid layout on the main element to make the 
+        file page05.html look like images/page05.png.
+
+        Do not change the HTML file or the style.css file!
+
+*/
+
+
+main{
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+#section01 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  #section03 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #section04 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  #section05 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  #section02 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+

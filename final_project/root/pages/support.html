@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/monkey-favicon.ico">
+    <title>Support - MonkeyWiz</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/support.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">MonkeyWiz</a></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="monkeys.html">Monkeys</a></li>
+        <li><a href="why.html">Why Monkeys?</a></li>
+        <li><a href="about.html">About US</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>
+          Donate Today And Help Save The Lives Of Monkeys All Around The World!
+        </h2>
+        <p>
+          DONATIONS ARE NOT REQUIRED, but are greatly appreciated by everyone here at 
+          MonkeyWiz. Upon donation, you will receive an email for the opportunity to 
+          be a part of the cause as a supporter!
+        </p>
+      </section>
+      <section>
+        <h2>Where Is Your Money Going?</h2>
+        <p>
+          Money donated through the form below will be put towards preserving 
+          the ecosystems and habitats of all monkeys throughout the whole world.
+          We have teams in most monkey populated countries who are ready and waiting
+          for the funding and the opportunity to take one more step forward to
+          acheiving the goal of repopulating the population of monkeys in a 
+          given area.
+        </p>
+      </section>
+      <section id="form">
+        <form action="support.html" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <!--first name-->
+            <div class="formrow">
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                maxlength="250"
+                required
+                autofocus
+              >
+            </div>
+            <!--last name-->
+            <div class="formrow">
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                maxlength="250"
+                required
+              >
+            </div>
+            <!--street-->
+            <div class="formrow">
+              <label for="street">Street</label>
+              <input
+                type="text"
+                name="street"
+                id="street"
+                maxlength="250"
+                required
+              >
+            </div>
+            <!--city-->
+            <div class="formrow">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                maxlength="100"
+                required
+              >
+            </div>
+            <!--state-->
+            <div class="formrow">
+              <label for="state">State</label>
+              <input
+                type="text"
+                name="state"
+                id="state"
+                maxlength="2"
+                required
+              >
+            </div>
+            <!--zip code-->
+            <!--pattern from textbook and this code is from week 11 lab-->
+            <div class="formrow">
+              <label for="zipcode">ZIP code</label>
+              <input
+                type="text"
+                name="zipcode"
+                id="zipcode"
+                pattern="\d{5}([\-]\d{4})?"
+                placeholder="99999-9999"
+                required
+              >
+              <div class="formrow">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="johndoe@domain.com">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Payment Information</legend>
+            <div class="formrow">
+              <label for="ccnumber">Card Number</label>
+              <input
+                type="tel"
+                name="ccnumber"
+                id="ccnumber"
+                maxlength="19"
+                placeholder="1111 2222 3333 4444"
+                required
+              >
+            </div>
+            <div class="formrow">
+              <label for="edate">Expiration Date</label>
+              <input 
+               type="date" 
+               name="edate" 
+               id="edate" 
+               required >
+            </div>
+            <div class="formrow">
+              <label for="cvc">CVC 
+                <a id="cvc_link" href="https://help.gopay.com/en/knowledge-base/security/what-is-cvv-cvc-code-and-where-can-i-find-it-on-my-card" target="_blank">
+                  What's this?</a></label>
+              <input 
+               type="tel" 
+               name="cvc" 
+               id="cvc"
+               required >
+            </div>
+            <div class="formrow">
+              <label for="amt">Amount</label>
+              <select name="amt" id="amt">
+                <option value="select">Choose...</option>
+                <option value="10">$10</option>
+                <option value="25">$25</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+              </select>
+            </div>
+          </fieldset>
+          <div id="submitdiv">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </section>
+      <section><img src="../images/monkeysup1.png" alt="monkeysup1"></section>
+    </main>
+
+    <footer>
+      <section id="foot_home">
+        <h3>&copy; 2022 MonkeyWiz</h3>
+        <p><a href="../index.html">Return to Homepage</a></p>
+      </section>
+      <section id="foot_address">
+        <h3>Contact Information</h3>
+        <p><a href="https://google.com">monkeywizbusiness@email.fake</a></p>
+        <p><a href="https://google.com">936-184-4199</a></p>
+        <address>
+          123 Rockford Pl. <br>
+          Monkeyville, IA 48534
+        </address>
+      </section>
+
+      <section id="foot_contact">
+        <h3>Reach us on Social Media!</h3>
+        <p><a href="https://facebook.com">Facebook</a></p>
+        <p><a href="https://twitter.com">Twitter</a></p>
+        <p><a href="https://instagram.com">Instagram</a></p>
+        <p><a href="https://tiktok.com">TikTok</a></p>
+      </section>
+    </footer>
+  </body>
+</html>

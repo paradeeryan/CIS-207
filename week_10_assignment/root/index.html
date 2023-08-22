@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/faviconw10.ico"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--Start of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral&display=swap"
+      rel="stylesheet"
+    />
+    <!--End of Google Fonts-->
+    <!-- Start SlickNav here  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"
+      integrity="sha512-heyoieAHmpAL3BdaQMsbIOhVvGb4+pl4aGCZqWzX/f1BChRArrBy/XUZDHW9WVi5p6pf92pX4yjkfmdaIYa2QQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"
+      integrity="sha512-FmCXNJaXWw1fc3G8zO3WdwR2N23YTWDFDTM3uretxVIbZ7lvnjHkciW4zy6JGvnrgjkcNEk8UNtdGTLs2GExAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#main_nav").slicknav({ prependTo: "#mobile_nav" });
+      });
+    </script>
+
+    <!-- End SlickNav -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Title</h1>
+    </header>
+    <main>
+      <section id="section01">
+        <h2>Section 1</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quas
+          alias numquam at doloremque sapiente laudantium sit, ad autem quia
+          quam sunt quibusdam aliquid eligendi quo asperiores magnam iure!
+          Explicabo.
+        </p>
+        <figure>
+            <picture>
+                <source media="(min-width: 600px)" 
+                srcset="images/skaterguy.png">
+                <source media="(max-width: 600px)"
+                 srcset="images/skaterguysmall.png">
+                 <img src="images/skaterguysmall.png" 
+                 alt="error.">
+            </picture>
+            <figcaption>
+                here is a skateboarder.
+            </figcaption>
+        </figure>
+      </section>
+      <section id="section02">
+        <h2>Section 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          voluptatum aspernatur ratione ipsam qui sequi hic perspiciatis ipsum
+          voluptatem architecto, nostrum rem quidem blanditiis dolore, ducimus
+          animi minima omnis adipisci.
+        </p>
+        <figure>
+            <picture>
+                <source media="(min-width: 600px)" 
+                srcset="images/snowboarderguybig.png">
+                <source media="(max-width: 600px)"
+                 srcset="images/snowboarderguy.png">
+                 <img src="images/snowboarderguy.png" 
+                 alt="error.">
+            </picture>
+            <figcaption>
+                here is a snowboarder.
+            </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Table Section</h2>
+        <table>
+            <caption>Top 5 Candy</caption>
+            <thead>
+                <tr>
+                    <th>Candy Name</th>
+                    <th>Manufacturer</th>
+                    <th>Description</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hershey's Kiss</td>
+                    <td>The Hershey Company</td>
+                    <td>Small cone shaped pieces of chocolate</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>KitKat</td>
+                    <td>The Hershey Company</td>
+                    <td>Chocolate bar with wafers inside</td>
+                    <td>218</td>
+                </tr>
+                <tr>
+                    <td>Reeses Peanut Butter Cup</td>
+                    <td>The Hershey Company</td>
+                    <td>Chocolate & Peanut Butter</td>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <td>Gummy Bears</td>
+                    <td>Haribo</td>
+                    <td>Gummy bear shaped treats</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>YORK Peppermint Patties</td>
+                    <td>The Hershey Company</td>
+                    <td>Chocolate mixed with an icy mint flavor</td>
+                    <td>165</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!--Use colspan here instead of css because
+                    this is  a structural change to the table, not a
+                     display change.-->
+                    <td colspan="3">Total calories if you were to eat one of each:</td>
+                    <td>647 Calories</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    </main>
+    <footer>
+      <p>&copy; 2022</p>
+    </footer>
+  </body>
+</html>

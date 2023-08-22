@@ -1,0 +1,74 @@
+/*
+    FILE    style.css
+    DATE    2022-09-20
+    AUTHOR  Ryan Paradee
+        DESCRIPTION
+            Standard Styling Sheet
+*/
+header{
+    margin: 0 auto;
+    background: url(../images/marbletile.jpg) repeat;
+}
+
+nav{
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 2px 2px darkgrey;
+    background-image: radial-gradient(#ff9999, white, #9999ff);
+}
+
+nav ul li a{
+    display: inline-block;
+    width: 5em;
+    margin: 0.25em;
+    background-color: lightblue;
+    border: 3px outset darkgray;
+    box-shadow: 2px 2px black;
+ }
+ 
+ nav ul li a:active{
+    border: 3px inset lightgray;
+    color: brown;
+ }
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to right, #ff9999, white 50%, #9999ff);
+}
+
+main{
+    background-color: wheat;
+    padding: 1em;
+}
+
+#a{
+    margin: .5em;
+    border-style: dotted;
+    border-color: white;
+    box-shadow: 4px 4px darkgray;
+}
+
+#b{
+    margin: .5em;
+    border-style: double;
+    border-color: red;
+    box-shadow: 4px 4px darkgray;
+}
+
+#c{
+    margin: .5em;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 4px 4px darkgray;
+}
+
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background: url(../images/monkeyw4.jpg) repeat;
+}

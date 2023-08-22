@@ -1,0 +1,164 @@
+/*
+    FILE    style.css
+    DATE    2022-11-07
+    AUTHOR  Ryan Paradee
+    DESCRIPTION
+        standard styling
+*/
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+
+#section01 h2{
+    font-family: 'Rubik', sans-serif;
+}
+
+#section01 p{
+    font-family: 'Spectral', serif;
+}
+
+#section02 h2{
+    font-family: 'Spectral', serif;
+}
+
+#section02 p{
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+/*TABLE STYLING*/
+
+table, th, td {
+    border: 1px solid saddlebrown;
+    border-collapse: collapse;
+}
+table{
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+}
+
+table caption{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+table tbody tr:nth-child(odd){
+    background-color: white;
+}
+table tbody tr:nth-child(even){
+    background-color: lightblue;
+}
+
+table tbody tr:hover{
+    background-color: black;
+    color: white;
+}
+
+table tr th:first-of-type{
+    width: 20%;
+
+}
+
+table tr th:nth-of-type(2){
+    width: 20%;
+}
+
+table tr td:nth-of-type(3){
+    width: 50%;
+    text-align: left;
+}
+
+table tr td:nth-of-type(4){
+    width: 20%;
+    text-align: right;
+}
+
+table tfoot{
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+table tfoot:hover{
+    background-color: black;
+    color: yellowgreen;
+}
+
+table tfoot td:nth-of-type(2){
+    text-align: right;
+}
+
+
+
+
+#mobile_nav{
+    display: none;
+}
+
+/*
+    MEDIA QUERY HERE 
+*/
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        /*background-color: aqua;*/ /* for testing that the media query works */
+    }
+
+    /*
+        The .slicknav_menu class is defined by the SlickNav functions
+    */
+    .slicknav_menu {
+        background-color: darkgoldenrod !important;
+        color: antiquewhite;
+        padding: 0.25em;
+    }
+
+    .slicknav_menu a {
+        color:antiquewhite;
+        text-decoration: none;
+    }
+
+    #mobile_nav{
+        display: block;
+    }
+
+    #main_nav{
+        display: none;
+    }
+
+    header{
+        padding: 0.25em;
+    }
+
+    main{
+        width:95%;
+        margin: 0 auto;
+    }
+
+    li{
+        margin-bottom: 0.5em;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+} /* end media query */
+
+
+
+
+
+
+
+
+
+
+
+
+

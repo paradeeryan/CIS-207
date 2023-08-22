@@ -1,0 +1,19 @@
+/*
+    FILE    page01.css
+    DATE    2022-10-27
+    AUTHOR  Ryan Paradee
+    DESCRIPTION
+        The grid styling for Page 01 of the Week 09 Assignment.
+
+        Use a media query and grid layout on the main element to make the 
+        file page01.html look like images/page01.png.
+
+        Do not change the HTML file or the style.css file!
+
+*/
+
+main{
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

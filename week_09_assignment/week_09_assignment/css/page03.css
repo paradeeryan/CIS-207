@@ -1,0 +1,41 @@
+/*
+    FILE    page03.css
+    DATE    2022-10-27
+    AUTHOR  Ryan Paradee
+    DESCRIPTION
+        The grid styling for Page 03 of the Week 09 Assignment.
+
+        Use a media query and grid layout on the main element to make the 
+        file page03.html look like images/page03.png.
+
+        Do not change the HTML file or the style.css file!
+
+*/
+
+
+main{
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#section01{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;   
+}
+
+
+#section02{
+    grid-column-start: 3;
+    grid-row-start: 1;   
+    grid-row-end: 4;
+}
+
+#section04{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;   
+    grid-row-end: 4;
+}

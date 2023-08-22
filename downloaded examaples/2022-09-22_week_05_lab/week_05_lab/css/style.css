@@ -1,0 +1,92 @@
+/*
+    FILE    style.css
+    DATE    2022-09-22
+    AUTHOR  Bob
+    DESCRIPTION
+        standard styling
+*/
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+#leftSection{
+    margin: 0;
+    width: 45%;
+    float: left;
+    border: 1px solid saddlebrown;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    column-count: 2;
+    column-gap: 1em;
+    column-rule-style: groove;
+}
+
+#leftSection h3{
+    column-span: all;
+}
+
+#rightSection{
+    margin: 0;
+    width: 45%;
+    float: right;
+    border: 1px solid saddlebrown;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    position: relative;
+}
+
+#rightSection p:first-of-type{
+    background-color: aqua;
+    width: 75%;
+    position: fixed;
+    top: 6em;
+    left: 5em;
+}
+
+#rightSection p:nth-of-type(2){
+    background-color:red;
+    width: 75%;
+    position: absolute;
+    top: 6em;
+    left: 5em;
+}
+
+#rightSection p:nth-of-type(3){
+    background-color:green;
+    width: 75%;
+    position: sticky; /* Only shows up when scrolling */
+    top: 6em;
+    left: 5em;
+}
+
+#rightSection p:nth-of-type(4){
+    background-color:orchid;
+    width: 75%;
+    position: relative; 
+    top: 6em;
+    left: 5em;
+}
+
+#rightSection p:nth-of-type(5){
+    background-color:goldenrod;
+    width: 75%;
+    position: static;
+    top: 6em;
+    left: 5em;
+}
+
+footer{
+    clear: both;
+    border: 1px solid brown;
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+}
+
+footer p:first-of-type {
+    text-align: right;
+}
+

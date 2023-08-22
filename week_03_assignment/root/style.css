@@ -1,0 +1,45 @@
+/*
+    FILE    style.css
+    DATE    2022-09-15
+    AUTHOR  RYAN PARADEE
+    DESCRIPTION
+        style sheet for week 03
+*/
+body {
+  background-color: wheat;
+  margin: 1em;
+  text-align: left;
+}
+
+header {
+  background-color: wheat;
+}
+h1{
+    font-weight: bolder;
+    background-color: palegoldenrod;
+}
+h2{
+    font-weight: 100;
+    color: blue;
+}
+p{
+    font-weight: lighter;
+}
+nav {
+    color: darkgreen;
+  font-weight: bold;
+  font-size: large;
+}
+
+img {
+  float: right;
+  border: 0.25em ridge gold;
+  box-shadow: 2px 2px gray;
+}
+
+footer {
+  clear: both;
+  margin-top: 1em;
+  background-color: palegoldenrod;
+  text-align: center;
+}

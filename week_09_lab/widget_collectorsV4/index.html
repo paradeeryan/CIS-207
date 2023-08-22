@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widget Collections</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Start SlickNav here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"
+      integrity="sha512-heyoieAHmpAL3BdaQMsbIOhVvGb4+pl4aGCZqWzX/f1BChRArrBy/XUZDHW9WVi5p6pf92pX4yjkfmdaIYa2QQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"
+      integrity="sha512-FmCXNJaXWw1fc3G8zO3WdwR2N23YTWDFDTM3uretxVIbZ7lvnjHkciW4zy6JGvnrgjkcNEk8UNtdGTLs2GExAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#main_nav").slicknav({ prependTo: "#mobile_nav" });
+      });
+    </script>
+
+    <!-- End SlickNav here   -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Widget Collections</h1>
+    </header>
+    <nav id="mobile_nav"></nav>
+    <nav id="main_nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members/memberhome.html">Members</a></li>
+        <li>
+          <a href="visitors/visitorhome.html">Visitors</a>
+          <ul>
+            <li><a href="visitors/history.html">History</a></li>
+            <li><a href="visitors/faq.html">FAQ</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="main_first_section">
+        <h2>First section</h2>
+        <img src="images/bukket.png" alt="gorilla" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor
+          vel deserunt distinctio omnis, numquam atque labore perspiciatis
+          assumenda repellendus consequatur illo, libero quaerat sint blanditiis
+          possimus laudantium. Voluptates, ipsam.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+          aliquam incidunt molestias explicabo sunt, eum officia eaque
+          dignissimos nulla laudantium reiciendis natus, unde error laborum. Ab
+          maxime molestiae ipsum quo?
+        </p>
+      </section>
+      <section>
+        <h2>Second Section</h2>
+        <img src="images/gorilla.jpg" alt="gorilla" />
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h3>Widget Collectors</h3>
+        <p>&copy; 2022 Widget Collectors</p>
+      </section>
+      <section>
+        <h3>Contact Information</h3>
+        <p><a href="https://google.com">monkeybusiness@email.fake</a></p>
+        <p><a href="https://google.com">641-781-9116</a></p>
+        <address>
+          123 Rockford Pl. <br />
+          Monkeyville, IA 485341
+        </address>
+      </section>
+
+
+      <section>
+        <h3>Reach us on Social Media!</h3>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>LinkedIn</p>
+        <p>Instagram</p>
+      </section>
+    </footer>
+  </body>
+</html>

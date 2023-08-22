@@ -1,0 +1,91 @@
+/*
+    FILE    style.css
+    DATE    2022-09-01
+    AUTHOR  RYAN PARADEE
+    DESCRIPTION
+        basic style sheet
+
+*/
+
+body {
+  width: 90%;
+  margin: 20px;
+  background-color: palegoldenrod;
+}
+
+nav ul {
+  list-style-type: none;
+  position: relative;
+}
+
+nav ul li {
+  float: left;
+  /*position: relative;*/
+}
+
+nav ul li a {
+  display: block;
+  width: 6em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: yellowgreen;
+  color: black;
+  border: 2px solid orange;
+}
+nav ul li a:hover {
+  background-color: palegoldenrod;
+}
+
+nav ul ul {
+  display: none; /* hides menu till we hover over it*/
+  position: absolute;
+}
+
+nav ul ul li {
+  float: none; /*display vertically*/
+  /*position: absolute;
+  left: 0;*/
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+main {
+  clear: both;
+}
+
+section {
+  background-color: yellowgreen;
+  padding: 0.5em;
+  margin-bottom: 00.5em;
+  border-radius: 1em;
+  border: 0.1em solid orange;
+  border-width: 0.5em;
+}
+
+img {
+  border: 0.25em ridge gold;
+  box-shadow: 2px 2px gray;
+}
+
+#questionlist{
+  list-style-image: url(../images/bukket.png);
+}
+
+dt{
+  font-weight: bold;
+}
+
+dd{
+  margin-bottom: 1em;
+}
+
+footer {
+  clear: both;
+  background-color: chocolate;
+  border: 2px solid black;
+  text-align: center;
+}

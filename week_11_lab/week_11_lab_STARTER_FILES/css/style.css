@@ -1,0 +1,82 @@
+/*
+    FILE    style.css
+    DATE    2022-10-27
+    AUTHOR  Bob Trapp
+    DESCRIPTION
+        Styling for the Week 11 In-Class Lab exploring forms
+
+*/
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: lavender;
+}
+
+header {
+  background-color: lightskyblue;
+  padding: 1em 1em 0 1em;
+  color: darkslategray;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Form Styling */
+fieldset {
+  margin-bottom: 1em;
+  border-radius: 0.25em;
+  box-shadow: 0.1em 0.1em orchid;
+}
+legend {
+  font-weight: bold;
+}
+label,
+input[type="text"],
+input[type="password"] {
+  display: block;
+}
+textarea {
+  width: 90%;
+  height: 3em;
+}
+#submitdiv{
+  padding: 0.5em;
+  text-align: right;
+}
+#submitdiv input[type="submit"]{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: lightskyblue;
+  padding: 1em;
+  color: darkslategray;
+}
+
+/* ****************************************************************************
+    DESKTOP
+**************************************************************************** */
+@media screen and (min-width: 600px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  label,
+  input[type="text"],
+  input[type="password"] {
+    display: inline-block;
+  }
+  textarea {
+    width: 50%;
+    height: 5em;
+  }
+  .formrow label{
+    width: 10em;
+    vertical-align: top;
+  }
+}

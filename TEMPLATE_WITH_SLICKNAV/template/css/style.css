@@ -1,0 +1,82 @@
+/*
+    FILE    style.css
+    DATE    2022-09-15
+    AUTHOR  Your name
+    DESCRIPTION
+        standard styling
+*/
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+
+
+#mobile_nav{
+    display: none;
+}
+
+/*
+    MEDIA QUERY HERE 
+*/
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        /*background-color: aqua;*/ /* for testing that the media query works */
+    }
+
+    /*
+        The .slicknav_menu class is defined by the SlickNav functions
+    */
+    .slicknav_menu {
+        background-color: darkgoldenrod !important;
+        color: antiquewhite;
+        padding: 0.25em;
+    }
+
+    .slicknav_menu a {
+        color:antiquewhite;
+        text-decoration: none;
+    }
+
+    #mobile_nav{
+        display: block;
+    }
+
+    #main_nav{
+        display: none;
+    }
+
+    header{
+        padding: 0.25em;
+    }
+
+    main{
+        width:95%;
+        margin: 0 auto;
+    }
+
+    li{
+        margin-bottom: 0.5em;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+} /* end media query */
+
+
+
+
+
+
+
+
+
+
+
+
+

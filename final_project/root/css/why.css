@@ -1,0 +1,26 @@
+/*
+    FILE    style.css
+    DATE    2022-12-06
+    AUTHOR  Ryan Paradee
+        DESCRIPTION
+            styling sheet for the
+            monkeys.html page
+*/
+@media screen and (max-width: 600px) {
+  #why_s1 img {
+    max-width: 150px;
+    max-height: 150px;
+    border: 0.1em solid rgb(109, 37, 37);
+    border-radius: 1em;
+    border-width: 0.25em;
+  }
+}
+@media screen and (min-width: 600px) {
+  #why_s1 img {
+    max-width: 300px;
+    max-height: 300px;
+    border: 0.1em solid rgb(109, 37, 37);
+    border-radius: 1em;
+    border-width: 0.25em;
+  }
+}

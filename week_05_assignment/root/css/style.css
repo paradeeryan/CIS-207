@@ -1,0 +1,78 @@
+/*
+    FILE    style.css
+    DATE    2022-09-25
+    AUTHOR  Ryan Paradee
+        DESCRIPTION
+            Standard Styling Sheet
+*/
+html {
+  background-image: url(../images/pexels-rachel-claire-5864235.jpg);
+}
+h1 {
+  text-align: center;
+  padding-top: 0.5em;
+}
+li {
+  display: inline;
+}
+#navy {
+  padding: 8px;
+  background-color: burlywood;
+  border-style: groove;
+}
+/*homepage monkey image*/
+#m1 {
+  max-width: 30%;
+  height: auto;
+  float: right;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 5em;
+}
+
+section {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+main #left_section{
+    background-color: rgb(30, 147, 77);
+    float: left;
+    width: 45%;
+    margin: 0;
+    border: 1px solid saddlebrown;
+}
+main #left_section h2{
+    column-span: all;
+}
+
+main #right_section{
+    background-color: rgb(30, 147, 77);
+    float: right;
+    width: 45%;
+    margin: 0;
+    border: 1px solid saddlebrown;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(30, 147, 77);
+}
+/*below is all footer formatting*/
+
+footer {
+  text-align: center;
+  line-height: 35%;
+  background-color: burlywood;
+  font-weight: bold;
+}
+
+#f1{
+    padding-top: 0.5em;
+}
+#f2{
+    padding-bottom: 0.5em;
+}
+#f3{
+    padding-top: 20em;
+}

@@ -1,0 +1,14 @@
+/*
+    FILE    style.css
+    DATE    2022-XX-XX
+    AUTHOR  Ryan Paradee
+        DESCRIPTION
+            Standard Styling Sheet
+*/
+
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: wheat;
+}

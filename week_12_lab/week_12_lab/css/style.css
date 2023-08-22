@@ -1,0 +1,64 @@
+/*
+    FILE    style.css
+    DATE    2022-11-10
+    AUTHOR  Ryan Paradee
+    DESCRIPTION
+        The standard style sheet
+        Colors from paletton.com
+*/
+
+:root{
+    --color1: #a4d563;
+    --color2: #ddf5be;
+    --color3: #c5ed92;
+    --color4: #80d43c;
+    --color5: #62951f;
+    --color6: #004400;
+}
+
+body{
+    background-color: var(--color2);
+    background-image: url("../images/background.png");
+    font-size: large;
+}
+h1{
+    font-weight: bold;
+    font-family: cursive;
+    color: var(--color5);
+}
+section{
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0.25em;
+    background-image: linear-gradient(
+        to bottom, var(--color2)
+        , var(--color3)
+        , var(--color4)
+    );
+    border-radius: 0.25em;
+}
+
+audio{
+    border: 5px solid var(--color5);
+    border-radius: 1.5em;
+}
+
+video{
+    max-width: 95%;
+    border: 5px solid var(--color5);
+    border-radius: 0.25em;
+}
+
+@media screen and (min-width: 600px){
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+section{
+    text-align: left;
+}
+
+video{
+    max-width: 600px;
+}
+}

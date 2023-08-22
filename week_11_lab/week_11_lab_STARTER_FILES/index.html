@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 11 Lab</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Search form goes here -->
+      <h1>Week 11 Lab</h1>
+    </header>
+    <main>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Text Inputs</legend>
+          
+          <div class="formrow">
+            <label for="username">User Name</label>
+            <input type="text" name="username" id="username" required autofocus>
+          </div>
+
+          <div class="formrow">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"  >
+          </div>
+
+          <div class="formrow">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+
+          <div class="formrow">
+            <label for="quantity">Qty</label>
+            <input type="number" name="quantity" id="quantity"
+                size= "4" min="0" max="9999" maxlength="4">
+          </div>
+
+          <div class="formrow">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" >
+          </div>
+
+          <div class="formrow">
+            <label for="homepage">Home Page</label>
+            <input type="url" name="homepage" id="homepage">
+          </div>
+
+          <div class="formrow">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <!--pattern from textbook-->
+          <div class="formrow">
+            <label for="zipcode">ZIP code</label>
+            <input type="text" name="zipcode" id="zipcode"
+            pattern="\d{5}([\-]\d{4})?" placeholder="99999-9999">
+          </div>
+
+          <div class="formrow">
+            <input type="hidden" name="secrethiding" id="secrethiding"
+            value="You can't see this...">
+          </div>
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Drop Down Lists</legend>
+
+          <div class="formrow">
+            <label for="servicelevel">Service Level</label>
+            <select name="servicelevel" id="servicelevel">
+              <option value="basic">Basic</option>
+              <option value="associate">Associate</option>
+              <option value="pro">Pro</option>
+            </select>
+          </div>
+
+          <div class="formrow">
+            <label for="choices">Choices</label>
+            <select name="choices" id="choices" size="4" multiple>
+              <optgroup label="Alpha">
+                <option value="1">first</option>
+                <option value="2">second</option>
+                <option value="3">third</option>
+              </optgroup>
+              <optgroup label="Beta">
+                <option value="4">fourth</option>
+                <option value="5">fifth</option>
+                <option value="6">sixth</option>
+              </optgroup>
+              <optgroup label="Charlie">
+                <option value="7">seventh</option>
+                <option value="8">eighth</option>
+                <option value="9">ninth</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="formrow">
+            <label for="favoritebreakfast">Favorite Breakfast</label>
+            <input type="text" name="favoritebreakfast" id="favoritebreakfast"
+            list="breakfastfoods">
+            <datalist id="breakfastfoods">
+              <option value="Eggs"></option>
+              <option value="Pancakes"></option>
+              <option value="Cereal"></option>
+            </datalist>
+          </div>
+
+        </fieldset>
+        <fieldset>
+          <legend>Buttons</legend>
+          <div class="formrow">
+            <label for="dothing">Button</label>
+            <button name="dothing" id="dothing" onclick="demoButton(event)">button text</button>
+          </div>
+
+          <div class="formrow">
+            <label for="inputbutton">Input Button</label>
+            <input type="button" value="Input Button" name="inputbutton"
+            id="inputbutton" onclick="demoButton(event)">
+          </div>
+          <p>Colors</p>
+          <div class="formrow">
+            <!--Radio buttons and check boxes, we usually place the label after the element-->
+            <input type="radio" name="color" id="red" value="red">
+            <label for="red">Red</label>
+            
+          </div>
+
+          <div class="formrow">
+            <label for=""></label>
+          </div>
+
+          <div class="formrow">
+            <label for=""></label>
+          </div>
+
+          <div class="formrow">
+            <label for=""></label>
+          </div>
+
+          <div class="formrow">
+            <label for=""></label>
+          </div>
+
+          <div class="formrow">
+            <label for=""></label>
+          </div>
+
+          <div class="formrow">
+            <label for=""></label>
+          </div>
+
+        </fieldset>
+
+        <div id="submitdiv">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2022 Ryan Paradee (I'm taking over)</p>
+    </footer>
+  </body>
+</html>

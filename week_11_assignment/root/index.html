@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prescription</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tell Us About Your Eyes!</h1>
+    </header>
+    <main>
+      <section>
+        <form action="" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <!--first name-->
+            <div class="formrow">
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" maxlength="250" required autofocus>
+            </div>
+            <!--last name-->
+            <div class="formrow">
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" maxlength="250" required>
+            </div>
+            <!--date of birth-->
+            <div class="formrow">
+              <label for="dob">Date of Birth </label>
+              <input type="date" name="dob" id="dob" required>
+            </div>
+            <!--parent/guardian-->
+            <div class="formrow">
+              <label for="guardian">Parent/Guardian Name (for minor patient)</label>
+              <input type="text" name="guardian" id="guardian" maxlength="250">
+            </div>
+            <!--phone-->
+            <div class="formrow">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" required
+              pattern="[0-9]{10}" placeholder="123-456-7890">
+            </div>
+            <!--email-->
+            <div class="formrow">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="johndoe@domain.com">
+            </div>
+            <!--new patient y/n-->
+            <p>Are you a new patient?</p>
+            <div class="formrow">
+            <input type="radio" name="decision" id="newpatienty" required>
+            <label for="newpatienty">Yes</label>
+            <input type="radio" name="decision" id="newpatientn" required>
+            <label for="newpatientn">No</label>
+            </div>
+            <!--street-->
+            <div class="formrow">
+              <label for="street">Street</label>
+              <input type="text" name="street" id="street" maxlength="250" required>
+            </div>
+            <!--city-->
+            <div class="formrow">
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" maxlength="100" required>
+            </div>
+            <!--state-->
+            <div class="formrow">
+              <label for="state">State</label>
+              <input type="text" name="state" id="state" maxlength="2" required>
+            </div>
+            <!--zip code-->
+            <!--pattern from textbook and this code is from week 11 lab-->
+          <div class="formrow">
+            <label for="zipcode">ZIP code</label>
+            <input type="text" name="zipcode" id="zipcode"
+            pattern="\d{5}([\-]\d{4})?" placeholder="99999-9999">
+          </div>
+          </fieldset>
+
+          <legend>Prescription Information</legend>
+          <fieldset>
+            <!--prescription date-->
+            <div class="formrow">
+              <label for="pdate">Prescription Date</label>
+              <input type="date" name="pdate" id="pdate" required>
+            </div>
+            <!--prescription expiration date-->
+            <div class="formrow">
+              <label for="pexdate">Prescription Expiration Date</label>
+              <input type="date" name="pexdate" id="pexdate" required>
+            </div>
+            <!--doctor name-->
+            <div class="formrow">
+              <label for="doctorname">Doctor Name</label>
+              <input type="text" name="doctorname" id="doctorname" maxlength="250" required>
+            </div>
+            <!--notes-->
+            <div class="formrow">
+              <label for="notes">Notes</label>
+              <textarea name="notes" id="notes"></textarea>
+            </div>
+            <!--pupillary distance-->
+            <div class="formrow">
+              <label for="pupillarydistance">Pupillary Distance (OD, OS, OU)</label>
+              <input type="integer" name="pupillarydistance" id="pupillarydistance" maxlength="2" required>
+            </div>
+            <p>OD Section</p>
+            <!--OD sphere-->
+            <div class="formrow">
+              <label for="odsphere">OD Sphere</label>
+              <input type="number" name="odsphere" id="odsphere"
+                  size= "4" min="-20.00" max="20.00" maxlength="4" required>
+            </div>
+            <!--OD Cylander-->
+            <div class="formrow">
+              <label for="odcylander">OD Cylander</label>
+              <input type="number" name="odcylander" id="odcylander"
+                  size= "4" min="-20.00" max="20.00" maxlength="4" required>
+            </div>
+            <!--OD axis-->
+            <div class="formrow">
+              <label for="odaxis">OD Axis</label>
+              <input type="integer" name="odaxis" id="odaxis" max="180" min="0" maxlength="3" required>
+            </div>
+            <!--OD prism-->
+            <div class="formrow">
+              <label for="odprism">OD Prism</label>
+              <input type="integer" name="odprism" id="odprism" required>
+            </div>
+            <!--OD base-->
+            <div class="formrow">
+              <label for="odbase">OD Base</label>
+              <select name="odbase" id="odbase">
+                <option value="defualt">Select</option>
+                <option value="bu">BU (Base Up)</option>
+                <option value="bd">BD (Base Down)</option>
+                <option value="bi">BI (Base In)</option>
+                <option value="bo">BO (Base Out)</option>
+              </select>
+            </div>
+            <!--OD add power-->
+            <div class="formrow">
+              <label for="odpower">OD Add Power</label>
+              <input type="number" name="odpower" id="odpower"
+              size= "3" min="0.25" max="5.00" maxlength="3" required>
+            </div>
+            <p>OS Section</p>
+            <!--OS sphere-->
+            <div class="formrow">
+              <label for="ossphere">OS Sphere</label>
+              <input type="number" name="ossphere" id="ossphere"
+                  size= "4" min="-20.00" max="20.00" maxlength="4" required>
+            </div>
+            <!--OS Cylander-->
+            <div class="formrow">
+              <label for="oscylander">OS Cylander</label>
+              <input type="number" name="oscylander" id="oscylander"
+                  size= "4" min="-20.00" max="20.00" maxlength="4" required>
+            </div>
+            <!--OS axis-->
+            <div class="formrow">
+              <label for="osaxis">OS Axis</label>
+              <input type="integer" name="osaxis" id="osaxis" max="180" min="0" maxlength="3" required>
+            </div>
+            <!--OS prism-->
+            <div class="formrow">
+              <label for="osprism">OS Prism</label>
+              <input type="integer" name="osprism" id="osprism" required>
+            </div>
+            <!--OS base-->
+            <div class="formrow">
+              <label for="osbase">OS Base</label>
+              <select name="osbase" id="osbase">
+                <option value="defualt">Select</option>
+                <option value="bu">BU (Base Up)</option>
+                <option value="bd">BD (Base Down)</option>
+                <option value="bi">BI (Base In)</option>
+                <option value="bo">BO (Base Out)</option>
+              </select>
+            </div>
+            <!--OS add power-->
+            <div class="formrow">
+              <label for="ospower">OS Add Power</label>
+              <input type="number" name="ospower" id="ospower"
+              size= "3" min="0.25" max="5.00" maxlength="3" required>
+            </div>
+          </fieldset>
+          <div id="submitdiv">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2022</p>
+    </footer>
+  </body>
+</html>
